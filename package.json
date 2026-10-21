@@ -1,0 +1,8 @@
+{
+  "name": "network-switch-anatomy",
+  "private": true,
+  "type": "module",
+  "description": "An 8-port network switch drawn as a machine: interactive demo and film",
+  "scripts": { "build": "node src/build-all.mjs", "shots": "node film/build-shots.mjs", "film": "node film/render.mjs video && sh film/mux.sh" },
+  "devDependencies": { "playwright-core": "^1.50.0" }
+}

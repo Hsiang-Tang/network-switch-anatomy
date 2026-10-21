@@ -1,0 +1,6 @@
+node_modules/
+.render/
+/*.mp4
+film/*.mp4
+*.wav
+.DS_Store
