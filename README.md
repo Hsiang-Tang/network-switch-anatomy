@@ -18,7 +18,7 @@ Built on the [anatomy](https://github.com/wheresryan22/anatomy) isometric kit (M
 | `film.html` | Page with the film player (sound on), served by GitHub Pages |
 | `src/` | Scene, board, enclosure and page scripts; `node src/build-all.mjs` regenerates `index.html` |
 | `vendor/anatomy/` | The parts of the anatomy kit the build needs, with its MIT license |
-| `media/` | The film (1080p30), its poster and the README preview animation |
+| `media/` | The film (1080p30), a sub-10 MB embed copy, its poster and the README preview animation |
 | `film/` | Frame-by-frame film director (`render.mjs`), camera shots, synthesised score (`music.py`), `mux.sh` |
 | `.render/` | Ignored: shot frames and intermediate files |
 
