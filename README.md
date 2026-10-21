@@ -3,9 +3,9 @@
 An 8-port gigabit network switch drawn as a crafted machine instead of a diagram: real board density, a working
 MAC-learning crossbar, an exploding stack of parts. One self-contained HTML file, no server, works offline.
 
-[![Preview of the film](media/preview.gif)](media/network-switch-anatomy.mp4)
+[![Preview of the film](media/preview.gif)](https://hsiang-tang.github.io/network-switch-anatomy/film.html)
 
-- **Watch the film** (49 s, with music): [media/network-switch-anatomy.mp4](media/network-switch-anatomy.mp4) (click the animation above for the full film with music). Full 1080p60 version: [Release](../../releases/latest)
+- **Watch the film with music** (49 s): https://hsiang-tang.github.io/network-switch-anatomy/film.html (click the animation above for the same). Full 1080p60 version: [Release](../../releases/latest)
 - **Live demo:** https://hsiang-tang.github.io/network-switch-anatomy/
 
 Built on the [anatomy](https://github.com/wheresryan22/anatomy) isometric kit (MIT, vendored in `vendor/anatomy`).
@@ -15,6 +15,7 @@ Built on the [anatomy](https://github.com/wheresryan22/anatomy) isometric kit (M
 | Path | Holds |
 | --- | --- |
 | `index.html` | The shipped demo (generated, self-contained) |
+| `film.html` | Page with the film player (sound on), served by GitHub Pages |
 | `src/` | Scene, board, enclosure and page scripts; `node src/build-all.mjs` regenerates `index.html` |
 | `vendor/anatomy/` | The parts of the anatomy kit the build needs, with its MIT license |
 | `media/` | The film (1080p30), its poster and the README preview animation |
