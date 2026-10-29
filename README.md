@@ -8,7 +8,7 @@ MAC-learning crossbar, an exploding stack of parts. One self-contained HTML file
 [![Preview of the film](media/preview.gif)](https://hsiang-tang.github.io/network-switch-anatomy/film.html)
 
 **Watch the film with music** (49 s): https://hsiang-tang.github.io/network-switch-anatomy/film.html (or click the
-animation above). Full 1080p60 version: [Release](../../releases/latest)
+animation above). Full 1080p60 version: [Release](https://github.com/Hsiang-Tang/network-switch-anatomy/releases/latest)
 
 ## What to try
 
@@ -41,10 +41,13 @@ Built on the [anatomy](https://github.com/wheresryan22/anatomy) isometric kit (M
 | `index.html` | The shipped demo (generated, self-contained) |
 | `film.html` | Page with the film player (sound on), served by GitHub Pages |
 | `src/` | Scene, board, enclosure and page scripts; `node src/build-all.mjs` regenerates `index.html` |
-| `vendor/anatomy/` | The parts of the anatomy kit the build needs, with its MIT license |
+| `src/kit/` | Modified copy of the anatomy kit with the perspective camera (MIT, licence kept) |
+| `vendor/anatomy/` | The unmodified parts of the anatomy kit the build needs, with its MIT license |
 | `media/` | The film (1080p30), a sub-10 MB embed copy, its poster and the README preview animation |
 | `film/` | Frame-by-frame film director (`render.mjs`), camera shots, synthesised score (`music.py`), `mux.sh` |
 | `.render/` | Ignored: shot frames and intermediate files |
+| `network-switch-anatomy.mp4` (root) | Ignored: the 1080p60 master written by `npm run film`; published through Releases |
+| `package.json`, `LICENSE`, `LICENSE.anatomy` | Build scripts and licences |
 
 ## Build
 
@@ -110,7 +113,7 @@ MCU, clock generator, LED driver and I/O expander are real package styles with a
 ### Source files
 
 Files:
-- `index.html`: the one deliverable, a single self-contained file (about 8 MB). It holds the two views (Iso, Elevation) and swaps between them with the toolbar buttons; open it in a browser.
+- `index.html`: the one deliverable, a single self-contained file (about 3.3 MB). It holds the two views (Iso, Elevation) and swaps between them with the toolbar buttons; open it in a browser.
 - `src/scene.mjs` dimensions, projection, helpers; `src/parts.mjs` package library and flat parts; `src/layout.mjs`
   placement, traces and routing; `src/board.mjs` the board layer; `src/enclosure.mjs` chassis, PSU, fans, jacks, SFP,
   cover; `src/fabric.mjs` crossbar and drawers; `src/pinouts.mjs` pin-out sheets; `src/model.mjs` learning-bridge model; `src/fan.mjs` blades;
